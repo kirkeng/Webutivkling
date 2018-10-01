@@ -1,0 +1,81 @@
+/* Header GRID oppset */
+header {
+    grid-area: header; 
+    display: grid; 
+    grid-template-rows: 5fr 1fr;
+    text-align: center; 
+    border: 1px solid grey; 
+    border-radius: 10px;
+    background-repeat: no-repeat; 
+    max-height: 150px; 
+}
+
+/* Navigasjon */
+nav {  
+    padding: 20px; 
+    border-top: 1px solid grey; 
+    border-radius: 10px; 
+    background-color: rgba(211, 211, 211, 0.6); 
+}
+
+nav a {
+    padding: 20px; 
+    text-decoration: none;
+    color: black;
+    font-size: 20px; 
+}
+
+.artikkelside {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 10px; 
+    grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"; 
+} 
+
+/* Main artikkelside GRID oppsett */
+#mainartikkelside {
+    grid-area: main; 
+    display: grid;
+    grid-template-columns: 1fr;  
+}
+
+.artikkeloverskrift {
+    text-align: center; 
+}
+
+.artikkeltekst {
+    text-align: justify; 
+    font-size: 12px; 
+}
+
+.artikkelbilde {
+    grid-area: main; 
+    float: right; 
+    width: 40%; 
+    text-align: center; 
+    margin-left: 20px; 
+    margin-right: 5px; 
+    margin-top: 0px;
+}
+
+.artikkelbilder {
+    max-width: 100%;
+    border: 1px solid grey; 
+    border-radius: 10px; 
+    box-shadow: 5px 5px 5px grey; 
+}
+
+#oppgave4liste li {
+    list-style-type: none; 
+}
+
+/* Footer GRID oppsett */
+footer {
+    grid-area: footer; 
+    display: grid; 
+    grid-template-columns: 1fr;  
+    margin: 0 auto; 
+}
